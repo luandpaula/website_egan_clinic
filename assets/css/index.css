@@ -85,26 +85,17 @@
   transform: scaleY(1);
 }
 
-@media(max-width: 700px){
-  .features-text{
-    margin-left: 0px;
-    margin-right: 0px;
-    margin: 12px;
-  }
-}
+
 
 
 /*Testmonial Section*/
 .wrapper1{
-  max-width: 1400px;
-  margin: auto;
-  padding: 40px;
-  padding-top: 40px;
-  padding-bottom: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 .wrapper1 .box{
   background: #fff;
@@ -156,20 +147,23 @@
 .box:hover .content .image img{
   border-color: #fff;
 }
+
 @media (max-width: 1045px) {
   .wrapper .box{
     width: calc(50% - 10px);
     margin: 10px 0;
   }
 }
-@media (max-width: 702px) {
+
+@media (max-width: 700px) {
   .wrapper .box{
     width: 100%;
   }
-}
-
-
-@media (max-width: 700px) {
+  .features-text{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: 12px;
+  }
   /* Ajustes na barra de navegação */
   nav .wrapper {
     flex-direction: column;
