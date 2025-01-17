@@ -90,12 +90,15 @@
 
 /*Testmonial Section*/
 .wrapper1{
-  max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 .wrapper1 .box{
   background: #fff;

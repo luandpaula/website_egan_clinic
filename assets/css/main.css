@@ -30,6 +30,7 @@
 
 nav {
   position: fixed;
+  z-index: 99;
   width: 100%;
   background-color: transparent;
   transition: background-color 0.4s ease-in-out;
@@ -43,7 +44,7 @@ nav.scrolled {
 nav .wrapper {
   position: relative;
   max-width: 1350px;
-  padding: 10px 20px;
+  padding: 0px;
   height: 60px;
   line-height: 70px;
   margin: auto;
@@ -427,31 +428,6 @@ footer p {
   padding-top: 20px;
 }
 
-/* Navegação */
-nav .nav-links li a {
-  font-size: 16px;
-  padding: 8px;
-}
-
-/* Testemunhos */
-.wrapper1 .box {
-  padding: 15px;
-}
-
-/* Footer */
-.footer-container {
-  width: 90%;
-}
-
-.footer-main {
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-section,
-.footer-links {
-  margin-bottom: 20px;
-}
 
 @media screen and (max-width: 970px) {
   .wrapper .btn {
@@ -658,30 +634,6 @@ nav .nav-links li a {
   .hero-btn {
     padding: 10px 28px;
     font-size: 15px;
-  }
-
-  nav .menu-btn {
-    display: block;
-  }
-
-  nav .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--secondary-color);
-    padding: 10px 0;
-  }
-
-  nav .nav-links.active {
-    display: flex;
-  }
-
-  nav .nav-links li {
-    text-align: center;
-    margin: 10px 0;
   }
 }
 
