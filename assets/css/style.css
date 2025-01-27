@@ -146,8 +146,8 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: rgb(14, 4, 48);
-    right: 30px;
+    background: #0e0430;
+    left: 30px;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
@@ -254,7 +254,7 @@ section .title::after{
     transform: translateX(320px) skewX(-45deg);
 }
 .hero-btn:hover{
-    color: rgb(61, 16, 207);
+    color: #3d10cf;
 }
 .hero-btn:hover:last-child{
     background: var(--primary-color);
@@ -268,8 +268,8 @@ section .title::after{
         font-size: 12px;
     }
     .hero-btn:last-child{
-        color: rgb(61, 16, 207);
-        border-color: rgb(61, 16, 207);
+        color: #3d10cf;
+        border-color: #3d10cf;
     }
 }
 
@@ -632,9 +632,9 @@ section .title::after{
     gap: 20px;
 }
 .map-section iframe {
-    width: 80%;
-    max-width: 800px;
-    height: 400px;
+    width: 100%;
+    max-width: inherit;
+    height: 450px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -670,8 +670,8 @@ section .title::after{
 /* Responsividade */
 @media (max-width: 768px) {
     .map-section iframe {
-        width: 90%;
-        height: 300px;
+        width: 100%;
+        height: 450px;
     }
 
     .map-section .address {
@@ -921,7 +921,7 @@ footer a{
        width: 150px;
     }
     .scroll-up-btn{
-        right: 15px;
+        left: 15px;
         bottom: 15px;
         height: 38px;
         width: 35px;
