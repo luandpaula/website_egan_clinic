@@ -439,6 +439,212 @@ section .title::after{
     width: 30%;
 }
 
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+  
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+} 
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}  
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+} 
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+} 
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+.logos-slide img {
+    height: 20px;
+    margin: 0 40px;
+}
+
+@media (max-width: 700px){
+    .logos:before {
+        left: 0;
+        background: transparent;
+    }
+    .logos:after {
+        right: 0;
+        background: transparent;
+    }
+}
+
+/* Rotating Banner section */
+.banner{
+    max-width: 1300px;
+    padding: 0 80px;
+    padding-bottom: 40px;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+}
+.banner h1{
+    font-size: 42px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 10px;;
+    color: rgb(44,44,44);
+}
+.banner p{
+    color: #333;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
+}  
+.banner .descricao{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}  
+.banner .descricao .highlight{
+    color: rgb(14, 4, 48);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner .entenda{
+    color: rgb(14, 4, 48);
+}  
+.metodologia{
+    flex: 1;
+    text-align: left;
+}
+a.button.contact-button1{
+    margin-bottom: 25px;
+}  
+.row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}  
+.banner{
+    flex: 1;
+    text-align: center;
+}  
+.banner-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    transition: all 0.3s ease;
+}  
+.banner-tabs .tab-link {
+    background: none;
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.5s, border-bottom 0.5s;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}  
+.banner-tabs .tab-link:hover {
+    transform: translateY(-4px);
+}  
+.banner-tabs .tab-link.active {
+    color: rgb(14, 4, 48);
+    border-bottom: 2px solid rgb(14, 4, 48);
+    font-weight: 900;
+}  
+.tab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgb(14, 4, 48);
+    border-radius: 10px;
+    width: 96,2%;
+    background: white;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+.tab-content:hover{
+    transform: translateY(-4px);
+    box-shadow: 5px 5px 10px rgb(14, 4, 48);
+}  
+.tab-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(14, 4, 48);
+}  
+.tab-content p {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+.tab-content .compliance{
+    text-decoration: none;
+    color: rgb(14, 4, 48);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tab-content .highlight{
+    text-decoration: none;
+    color: rgb(14, 4, 48);
+}
+  
+@media (max-width: 700px) {
+    .banner{
+      padding-bottom: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 10px;
+      width: 97%;
+    }
+    .banner h1{
+      font-size: 25px;
+    }
+    .banner h2{
+        font-size: 22px;
+    }
+    .banner p{
+      font-size: 13px;
+    }
+    .banner .descricao{
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .banner-tabs{
+      flex-direction: column;
+    }
+    .banner-tabs .tab-link {
+        font-size: 15px;
+        height: 40px;
+        border-bottom: 2px solid rgb(214, 214, 214);
+    }
+    .banner .entenda{
+        font-size: 13.5px;
+    }  
+} 
+
 /* map section*/
 .map-section {
     padding: 100px 0;
